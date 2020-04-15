@@ -30,9 +30,7 @@ export default class SingleColorPicker extends Component {
             name="rValue"
             value={this.props.value}
             id="r"
-            onChange={(e) => {
-              this.props.onChange(e)
-            }}
+            onChange={(e) => this.props.onChange(e,e.target.value)}
           />
         </div>
       )
@@ -64,9 +62,7 @@ export default class SingleColorPicker extends Component {
             name="gValue"
             value={this.props.value}
             id="g"
-            onChange={(e) => {
-              this.props.onChange(e)
-            }}
+            onChange={(e) => this.props.onChange(e,e.target.value)}
           />
         </div>
       )
@@ -98,9 +94,7 @@ export default class SingleColorPicker extends Component {
             name="bValue"
             value={this.props.value}
             id="b"
-            onChange={(e) => {
-              this.props.onChange(e)
-            }}
+            onChange={(e) => this.props.onChange(e,e.target.value)}
           />
         </div>
       )

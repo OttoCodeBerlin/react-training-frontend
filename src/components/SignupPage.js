@@ -34,34 +34,35 @@ export default class SignupPage extends Component {
       <div style={{ margin: '20px' }}>
         <Form noValidate onSubmit={this.handleSubmit}>
           <Form.Row>
-            <Form.Group as={Col} md="4" controlId="validationCustom01">
+            <Form.Group as={Col} md="4" >
               <Form.Label>Email</Form.Label>
               <Form.Control
                 style={{ marginBottom: '10px' }}
                 required
                 type="email"
+                key='1'
                 name="email"
                 value={this.state.email}
                 placeholder="Email..."
                 onChange={(e) => this.handleChange(e)}
               />
-              <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-
+              
               <Form.Label>Password</Form.Label>
               <Form.Control
                 style={{ marginBottom: '10px' }}
                 name="password"
                 type="password"
+                key='2'
                 value={this.state.password}
                 placeholder="Password..."
                 onChange={(e) => this.handleChange(e)}
               />
-              <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-
+              
               <Form.Label>Nationality</Form.Label>
               <Form.Control
                 as="select"
                 name="nationality"
+                key='3'
                 value={this.state.nationality}
                 onChange={(e) => this.handleChange(e)}
               >
